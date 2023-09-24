@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="style/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- <form class="form_1">
+    <input type="text" placeholder="Username" id="username_input" name="username">
+    <button>Submit</button>
+  </form> -->
+
+  <div class="product_form_block">
+    <form id="product_form">
+      <input type="text" placeholder="Название" id="product_name">
+      <input type="number" min="1" placeholder="Цена" id="product_price">
+      <button>Добавить</button>
+    </form>
+  </div>
+  <div class="products_filters">
+    <form id="products_filters_form">
+      <input type="text" placeholder="Название" id="product_search_name">
+      <div>
+        <label for="product_sort_field">Отсортировать по: </label>
+        <select id="product_sort_field">
+          <option value="name">Названию</option>
+          <option value="price">Цене</option>
+        </select>
+      </div>
+    </form>
+  </div>
+  <div class="products_block">
+    <!-- <div class="product_card">
+      <p>Name</p>
+      <p>Price</p>
+      <button class="remove_btn">X</button>
+    </div> -->
+    <h1>Товаров нет</h1>
+  </div>
+</body>
+<script src="script/script.js"></script>
+</html>
